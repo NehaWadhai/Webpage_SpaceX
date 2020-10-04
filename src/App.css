@@ -1,38 +1,127 @@
-.App {
-  text-align: center;
+.list-data{
+  padding: 15px;
+  color:black;
+  background-color: #dcdcdc
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: 15px;
+  text-align: left;
+  max-width: 100%;
+  font-weight: bold;
+  font-size: larger;
+  padding: 5px;
+}
+
+.list-filter {
+  font-weight: 700;
+  margin-left: 10px;
+}
+.list-column{
+  height: 92%;
+  width: 100%;
+  display: flex;
+  background-color: #dcdcdc
+}
+
+@media (max-width: 700px)  {
+  .list-column {
+    flex-direction: column;
+    height: 92%;
+    width: 100%;
+    display: flex;
+    background-color: white;
+
+  }
+  .list-section{
+    width: 100% !important;
+  }
+  .list-grid{
+   width: 100%;
+  }
+
+}
+.list-section{
+  width: 25%;
+  border: 1px solid #edebe9;
+  display: grid;
+  height: 600px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.list-image{
+  width: 75%;
+  border: 1px solid #edebe9;
+  display: grid;
+  grid-template-columns: repeat(4,1fr); 
+  margin: 10px;
+}
+
+.list-button{
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.list-grid{
+  display: grid;
+  height: 480px;
+  width: auto;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 9px 6px #00000029;
+  background-color: white;
+  border-radius: 8px;
+ 
+}
+
+.image-card{
+  background-color: #f2f2f2;
+    position: relative;
+    height: 240px;
+    margin: 10px;
+}
+
+.image-content{
+  position: relative;
+  height: 240px;
+  font-size: normal;
+  margin-left: 7px;
+}
+
+.image{
+height: 240px;
+width: 100%
+}
+
+.title{
+  font-weight: bold;
+  color:#494d83
+}
+
+.missionId{
+  color: black;
+  font-weight: bold;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+
+button{
+  background-color: #c7df96;
+    padding: 7px 20px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+

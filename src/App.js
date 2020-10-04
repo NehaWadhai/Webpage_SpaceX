@@ -1,25 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
+import RenderData from './components/RenderData'
 import './App.css';
 
 function App() {
+//calling RenderData to retrieve data on web page
+const name = "Neha Wadhai"
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="list-data">
+       <header className="header">SpaceX   Launch   Programs</header>
+      <RenderData />
+  <footer style={{textAlign:"center", fontWeight:"bold", padding:"10px"}} > Developed by : {name}</footer>
     </div>
+    
   );
 }
 
