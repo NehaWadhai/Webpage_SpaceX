@@ -22,44 +22,71 @@
 }
 .list-column{
   height: 92%;
-  width: 100%;
   display: flex;
   background-color: #dcdcdc
 }
 
-@media (max-width: 700px)  {
+@media only screen and (max-width: 700px)  {
   .list-column {
-    flex-direction: column;
-    height: 92%;
     width: 100%;
-    display: flex;
-    background-color: white;
-
+    flex-direction: column;
   }
   .list-section{
     width: 100% !important;
+    margin-bottom: 10px;
+  }
+  .list-grid{
+   width: 100% !important;
+  }
+  .list-image{
+    grid-template-columns: auto;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 701px)   {
+  .list-column {
+    flex-direction: row;
+  }
+  .list-section{
+    width: 20% !important;
+    margin-right: 10px;
   }
   .list-grid{
    width: 100%;
   }
-
+  .list-image{
+    width: 80%;
+    grid-template-columns: auto auto;
+  }
 }
+
+@media only screen and (min-width: 1025px)  {
+  .list-column {
+    flex-direction: row;
+  }
+  .list-section{
+    width: 20% !important;
+    margin-right: 10px;
+  }
+  .list-grid{
+   width: 100%;
+  }
+  .list-image{
+    width: 80%;
+    grid-template-columns: auto auto auto auto;
+  }
+}
+
 .list-section{
-  width: 25%;
   border: 1px solid #edebe9;
   display: grid;
-  height: 600px;
-  margin: 10px;
+  height: fit-content;
   background-color: white;
   border-radius: 8px;
 }
 
 .list-image{
-  width: 75%;
-  border: 1px solid #edebe9;
   display: grid;
-  grid-template-columns: repeat(4,1fr); 
-  margin: 10px;
 }
 
 .list-button{
@@ -70,19 +97,15 @@
 }
 
 .list-grid{
-  display: grid;
-  height: 480px;
   width: auto;
   margin-right: 10px;
   margin-bottom: 10px;
-  box-shadow: 0 9px 6px #00000029;
   background-color: white;
   border-radius: 8px;
- 
 }
 
 .image-card{
-  background-color: #f2f2f2;
+    background-color: #f2f2f2;
     position: relative;
     height: 240px;
     margin: 10px;
@@ -115,7 +138,8 @@ width: 100%
 
 
 button{
-  background-color: #c7df96;
+    border: none;
+    background-color: #c7df96;
     padding: 7px 20px;
     margin-bottom: 10px;
     border-radius: 4px;
@@ -124,4 +148,17 @@ button{
     cursor: pointer;
 }
 
+.divider{
+  width: 100%;
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0,0,0,.1);
+}
 
+.highlight{
+  background-color: #84b61e !important;
+}

@@ -6,7 +6,7 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.hydrate(
   <React.StrictMode>
-    <App />
+    <App data={window.__INITIAL_DATA__}/>
   </React.StrictMode>,
   document.getElementById('root')
 );

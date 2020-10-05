@@ -9,7 +9,7 @@ const name = "Neha Wadhai"
     <div className="list-data">
        <header className="header">SpaceX   Launch   Programs</header>
       <RenderData />
-  <footer style={{textAlign:"center", fontWeight:"bold", padding:"10px"}} > Developed by : {name}</footer>
+      <footer style={{textAlign:"center", fontWeight:"bold", padding:"10px"}} > Developed by : {name}</footer>
     </div>
     
   );
